@@ -10,6 +10,9 @@ import Option from "./components/Option";
 import Doctorviewdata from "./components/Doctorviewdata";
 import Chatbot from "./components/Chatbot";
 import Viewdata from "./components/Viewdata";
+import Form from './components/Form.js'
+import CoordinatorForm from './components/CoordinatorForm.js'
+import ChatComponent from "./components/ChatComponent.js";
 
 export default class App extends Component {
   render() {
@@ -24,10 +27,23 @@ export default class App extends Component {
         ),
       },
       {
+        path: "/form",
+        element: (
+          <>
+            <Navbar />
+            <div className="my-10">
+              <Form/>
+            </div>
+            
+          </>
+        ),
+      },
+      {
         path: "/link",
         element: (
           <>
             <Login />
+            
           </>
         ),
       },
@@ -42,16 +58,16 @@ export default class App extends Component {
           </>
         ),
       },
-      {
-        path: "/doctor/uploaddata/chatbot",
-        element: (
-          <>
-            <div className="my-10">
-              <Chatbot />
-            </div>
-          </>
-        ),
-      },
+      // {
+      //   path: "/doctor/uploaddata/chatbot",
+      //   element: (
+      //     <>
+      //       <div className="my-10">
+      //         <Chatbot />
+      //       </div>
+      //     </>
+      //   ),
+      // },
       {
         path: "/doctor/updates",
         element: (
@@ -72,6 +88,22 @@ export default class App extends Component {
           </>
         ),
       },
+      {
+        path: "/coordinator/upload",
+        element: (
+          <>
+            <CoordinatorForm/>
+          </>
+        ),
+      },
+      // {
+      //   path: "/doctor/uploaddata/chatbot",
+      //   element: (
+      //     <>
+      //       <ChatComponent/>
+      //     </>
+      //   ),
+      // },
     ]);
     return (
       <>

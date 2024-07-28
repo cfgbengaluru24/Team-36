@@ -9,14 +9,14 @@ export default class Option extends Component {
           <div className="col-md-6 d-flex justify-content-center mb-4">
             <div className="card mx-4" style={{ width: "18rem" }}>
               <img
-                src="https://e7.pngegg.com/pngimages/655/1006/png-clipart-form-computer-icons-form-miscellaneous-template.png"
+                src={require("./formpic.jpg")}
                 className="card-img-top"
                 alt="Form"
               />
               <div className="card-body">
                 <h5 className="card-title"></h5>
                 <p className="card-text">Enter Patient Details Via Form</p>
-                <Link to="#" className="btn btn-primary">
+                <Link to="/form" className="btn btn-primary">
                   Enter
                 </Link>
               </div>
@@ -26,7 +26,7 @@ export default class Option extends Component {
           <div className="col-md-6 d-flex justify-content-center mb-4">
             <div className="card mx-4" style={{ width: "18rem" }}>
               <img
-                src="https://e7.pngegg.com/pngimages/655/1006/png-clipart-form-computer-icons-form-miscellaneous-template.png"
+                src={require("./chatpic.jpg")}
                 className="card-img-top"
                 alt="Form"
               />

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Patient Data Form</title>
+    <link rel="stylesheet" href="formstyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dentist Analysis Form</h1>
+      <form id="dentistForm">
+        <fieldset>
+          <legend>Patient Information</legend>
+          <label for="patientName">Patient Name:</label>
+          <input type="text" id="patientName" name="patientName" required />
+
+          <label for="patientGender">Gender:</label>
+          <select id="patientGender" name="patientGender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="dateOfBirth">Date of Birth:</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+
+          <label for="villageName">Village Name:</label>
+          <input type="text" id="villageName" name="villageName" required />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+
+          <label for="pincode">Pincode:</label>
+          <input type="text" id="pincode" name="pincode" required />
+
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" />
+
+          <label for="parentName">Parent Name:</label>
+          <input type="text" id="parentName" name="parentName" required />
+
+          <label for="attendingDoctor">Attending Doctor Name:</label>
+          <input
+            type="text"
+            id="attendingDoctor"
+            name="attendingDoctor"
+            required
+            readonly
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Medical History</legend>
+
+          <label for="knownAllergies">Known Allergies:</label>
+          <textarea
+            id="knownAllergies"
+            name="knownAllergies"
+            rows="2"
+          ></textarea>
+
+          <label for="medications">Medications Taking:</label>
+          <textarea id="medications" name="medications" rows="2"></textarea>
+
+          <label for="pastTreatments">Past Treatments:</label>
+          <textarea
+            id="pastTreatments"
+            name="pastTreatments"
+            rows="2"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dental Assessment</legend>
+
+          <label for="plaqueIndex">Plaque Index:</label>
+          <input type="number" id="plaqueIndex" name="plaqueIndex" required />
+
+          <label for="gingivalIndex">Gingival Index:</label>
+          <input type="number" id="gingivaIndex" name="gingivaIndex" required />
+
+          <label for="caries">Caries:</label>
+          <input type="text" id="caries" name="caries" required />
+
+          <label for="missingTeeth">Missing Teeth(0 - 32):</label>
+          <input type="number" id="missingTeeth" name="missingTeeth" required />
+
+          <label for="gumCondition">Gum Condition:</label>
+          <input type="text" id="gumCondition" name="gumCondition" required />
+
+          <label for="currentConditionPictures"
+            >Current Condition Pictures:</label
+          >
+          <input
+            type="file"
+            id="currentConditionPictures"
+            name="currentConditionPictures"
+            accept="image/*"
+            multiple
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Blood Diagnosis</legend>
+
+          <label for="rbcCount"
+            >Red Blood Cell Count (million cells/mcL):</label
+          >
+          <input type="number" id="rbcCount" name="rbcCount" required />
+
+          <label for="hemoglobinLevel">Hemoglobin Level (g/dL):</label>
+          <input
+            type="number"
+            id="hemoglobinLevel"
+            name="hemoglobinLevel"
+            required
+          />
+
+          <label for="ironLevel">Iron Level (mcg/dL):</label>
+          <input type="number" id="ironLevel" name="ironLevel" required />
+
+          <label for="ferritinLevel">Ferritin Level (ng/mL):</label>
+          <input
+            type="number"
+            id="ferritinLevel"
+            name="ferritinLevel"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Patient Reports</legend>
+          <label for="patientReport">Upload Patient Report (Image):</label>
+          <input
+            type="file"
+            id="patientReport"
+            name="patientReport"
+            accept="image/*"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Diagnosis</legend>
+          <label for="diagnosis">Enter details:</label>
+          <textarea
+            id="diagnosis"
+            name="diagnosis"
+            rows="4"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Treatment Plan</legend>
+          <label for="treatmentPlan">Enter details:</label>
+          <textarea
+            id="treatmentPlan"
+            name="treatmentPlan"
+            rows="4"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Notes</legend>
+          <label for="additionalNotes">Enter details:</label>
+          <textarea
+            id="additionalNotes"
+            name="additionalNotes"
+            rows="4"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="formscript.js"></script>
+  </body>
+</html>

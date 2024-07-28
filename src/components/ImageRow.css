@@ -1,0 +1,20 @@
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 8px; /* Space between image and text */
+}
+
+.text {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+}

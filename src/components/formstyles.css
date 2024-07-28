@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container121 {
+  width: 60%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+  color: #333;
+}
+
+.form121 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fieldset121 {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.legend121 {
+  font-weight: bold;
+  color: #333;
+}
+
+.label121 {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 20%;
+  max-width: 500px;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
